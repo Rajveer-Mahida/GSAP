@@ -1,42 +1,23 @@
-let tl = gsap.timeline();
-
-tl.from("#nav img,#nav h3,#nav button", {
-    y: -100,
-    duration: 1,
+gsap.from("#page1 #box", {
+    scale: 0,
     delay: 0.5,
-    opacity: 0,
-    stagger: 0.2
-
+    duration: 2,
+    rotate: 360,
+    yoyo:true
 })
 
-tl.from("#main h1", {
-    y: 100,
-    duration: 1,
-    // delay : 1,
-    stagger: 0.3,
-    opacity: 0
+gsap.from("#page2 #box", {
+    scale: 0,
+    duration: 2,
+    rotate: 360,
+    // scrollTrigger: "#page2 #box"
+    scrollTrigger :{
+        trigger : "#page2 #box",
+        scroll : "body",
+        markers: true,
+        start:"top 70%",
+        end: "top 30%",
+        scrub : 2
+    }
 })
-
-
-tl.from(".images > img", {
-    scale: 0.1,
-    opacity: 0,
-    stagger: 0.2
-})
-
-tl.from("h5",{
-    scale:0,
-    opacity:0,
-
-})
-
-tl.to("h5",{
-    y : 20,
-    duration:0.7,
-    yoyo:true,
-    repeat : -1
-})
-
-
-
 
