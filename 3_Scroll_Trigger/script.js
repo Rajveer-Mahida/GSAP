@@ -29,7 +29,7 @@ gsap.from("#page3 #box", {
     scrollTrigger :{
         trigger : "#page3 #box",
         scroll : "body",
-        markers: true,
+        // markers: true,
         start:"top 80%",
         end: "top 20%",
         scrub : 3
