@@ -1,6 +1,0 @@
-{
-  "rewrites": [
-    {"source": "/3_Scroll_Trigger/", "destination": "gsap-rajveermahida.vercel.app/3_Scroll_Trigger"},
-
-  ]
-}
