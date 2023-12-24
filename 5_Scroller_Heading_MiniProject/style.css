@@ -1,67 +1,86 @@
 @font-face {
-    font-family: 'moqo';
-    src: url(./Heading-Now-Variable.ttf);
-
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #fff;
-    font-family: 'Gilroy', sans-serif;
-   
+  font-family: "moqo";
+  src: url(./Heading-Now-Variable.ttf);
 }
 
-html,body{
-    height: 100%;
-    width:100%;
+@font-face {
+  font-family: "monument";
+  src: url("./MonumentExtended-Ultrabold.otf");
 }
 
-#main{
-    height: 100%;
-    width: 100%;
-    background-color: #000;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Gilroy", sans-serif;
 }
 
-#main #nav{
-    height: 80px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
-
-#page1{
-    height: 100vh;
-    width: 100%;
-    color: #fff;
-    background-color: #000;
-    overflow: hidden;
-    padding: 0 10px;
+#loader {
+  width: 100%;
+  height: 100vh;
+  background-color: #fbfbfb;
+  z-index: 99;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#page1 h1{
-    font-size: 35vw;
-    text-transform: uppercase;
-    font-family: moqo;
-    color: #fff;
-    font-weight: 900;
-    font-stretch: 300%;
-    text-wrap: nowrap;
+#loader h1 {
+  color: #000;
+  font-family: "monument";
+  font-size: 80px;
+  font-weight: normal;
 }
 
-
-
-
-#page2{
-    height: 100vh;
-    width: 100%;
-    background-color: #000;
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
 }
-#page3{
-    height: 100vh;
-    width: 100%;
-    background-color: #000;
+    
+#main #nav {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+  background-color: #000;
+  overflow: hidden;
+  padding: 0 10px;
+}
+
+#page1 h1 {
+  font-size: 35vw;
+  text-transform: uppercase;
+  font-family: moqo;
+  color: #fff;
+  font-weight: 900;
+  font-stretch: 300%;
+  text-wrap: nowrap;
+}
+
+#page2 {
+  height: 100vh;
+  width: 100%;
+  background-color: #8e1010;
+}
+#page3 {
+  height: 100vh;
+  width: 100%;
+  background-color: #1d9fae;
 }
